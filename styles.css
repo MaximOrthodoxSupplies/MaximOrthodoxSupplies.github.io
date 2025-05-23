@@ -15,30 +15,67 @@ body {
   color: var(--text);
 }
 
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Höhe des Viewports */
+}
+
 /* Kopfbereich */
 header {
   background-color: var(--braun);
   color: white;
   padding: 2rem;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-header h1 {
+/* Kreuz Logo auf Willkommenseite */
+#cross {
+  font-size: 50px;
+  padding-left: 20px;
+  line-height: 1;
+  color: #ffe600;
+   transition: text-shadow 0.3s ease;
+}
+
+#cross:hover {
+  text-shadow:
+    0 0 5px #fff7b2,   /* leichter innerer Schein */
+    0 0 10px #ffd700,  /* goldener Schein */
+    0 0 20px #ffcc00,
+    0 0 30px #ffb800,
+    0 0 40px #ffaa00,
+    0 0 50px #ff9900;
+}
+
+#title {
+  flex-grow: 1;        
+  text-align: center;   
+}
+
+#title h1 {
   margin: 0;
-  font-size: 2.2rem;
+  font-size: 2.3rem;
 }
 
-header p {
+#title p {
   margin-top: 0.5rem;
   font-size: 1.1rem;
   color: #f5e8d6;
+}
+
+/* Willkommens Div */
+#indexWillkommen {
+  display: flex;
+ 
 }
 
 /* Seitenlayout */
 .container {
   display: flex;
   min-height: 80vh;
-  min-
 }
 
 /* Navigation */
@@ -107,12 +144,18 @@ footer {
 }
 
 a {
-  color: inherit;         /* Erbt die Textfarbe der Umgebung */
-  text-decoration: none;  /* Entfernt die Unterstreichung */
-  font-weight: bold;      /* Optional: Fett für Sichtbarkeit */
+  color: inherit;         
+  text-decoration: none;  
+  font-weight: bold;      
 }
 
 a:hover {
-  text-decoration: underline; /* Beim Überfahren mit der Maus: Unterstrichen */
-  color: #8B0000;             /* Optional: dunkles Rot beim Hover */
+  text-decoration: underline; 
+  color: #8B0000;             
 }
+
+a.no_hover:hover {
+  text-decoration: none; 
+             
+}
+
