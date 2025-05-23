@@ -1,0 +1,106 @@
+/* Allgemeine Farben */
+:root {
+  --beige: #f5f0e6;
+  --braun: #5c3a21;
+  --hellbraun: #a67c52;
+  --dunkelbeige: #e0d6c3;
+  --text: #2e1c0e;
+}
+
+/* Grundstruktur */
+body {
+  margin: 0;
+  font-family: "Georgia", "Times New Roman", serif;
+  background-color: var(--beige);
+  color: var(--text);
+}
+
+/* Kopfbereich */
+header {
+  background-color: var(--braun);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  color: #f5e8d6;
+}
+
+/* Seitenlayout */
+.container {
+  display: flex;
+  min-height: 80vh;
+}
+
+/* Navigation */
+nav {
+  width: 220px;
+  background-color: var(--dunkelbeige);
+  padding: 1.5rem;
+  border-right: 2px solid var(--hellbraun);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 1.2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--braun);
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+/* Hauptinhalt */
+main {
+  flex-grow: 1;
+  padding: 2rem;
+}
+
+/* Fussbereich */
+footer {
+  background-color: var(--dunkelbeige);
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 2px solid var(--hellbraun);
+  color: var(--text);
+}
+
+/* Bild-Slider für Katalog */
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider img {
+  display: none;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  max-width: 600px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.slider img.active {
+  display: block;
+}
