@@ -38,6 +38,7 @@ header p {
 .container {
   display: flex;
   min-height: 80vh;
+  min-
 }
 
 /* Navigation */
@@ -103,4 +104,15 @@ footer {
 
 .slider img.active {
   display: block;
+}
+
+a {
+  color: inherit;         /* Erbt die Textfarbe der Umgebung */
+  text-decoration: none;  /* Entfernt die Unterstreichung */
+  font-weight: bold;      /* Optional: Fett für Sichtbarkeit */
+}
+
+a:hover {
+  text-decoration: underline; /* Beim Überfahren mit der Maus: Unterstrichen */
+  color: #8B0000;             /* Optional: dunkles Rot beim Hover */
 }
