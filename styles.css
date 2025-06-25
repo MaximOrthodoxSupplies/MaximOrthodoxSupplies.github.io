@@ -1,4 +1,4 @@
-/* Allgemeine Farben */
+
 :root {
   --beige: #f5f0e6;
   --braun: #5c3a21;
@@ -7,7 +7,7 @@
   --text: #2e1c0e;
 }
 
-/* Grundstruktur */
+
 body {
   margin: 0;
   font-family: "Georgia", "Times New Roman", serif;
@@ -18,10 +18,10 @@ body {
 .page-wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Höhe des Viewports */
+  min-height: 100vh;
 }
 
-/* Kopfbereich */
+
 header {
   background-color: var(--braun);
   color: white;
@@ -31,7 +31,7 @@ header {
   gap: 10px;
 }
 
-/* Kreuz Logo auf Willkommenseite */
+
 #cross {
   font-size: 50px;
   padding-left: 20px;
@@ -42,8 +42,8 @@ header {
 
 #cross:hover {
   text-shadow:
-    0 0 5px #fff7b2,   /* leichter innerer Schein */
-    0 0 10px #ffd700,  /* goldener Schein */
+    0 0 5px #fff7b2,  
+    0 0 10px #ffd700,  
     0 0 20px #ffcc00,
     0 0 30px #ffb800,
     0 0 40px #ffaa00,
@@ -66,19 +66,18 @@ header {
   color: #f5e8d6;
 }
 
-/* Willkommens Div */
 #indexWillkommen {
   display: flex;
  
 }
 
-/* Seitenlayout */
+
 .container {
   display: flex;
   min-height: 80vh;
 }
 
-/* Navigation */
+
 nav {
   width: 220px;
   background-color: var(--dunkelbeige);
@@ -106,13 +105,12 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Hauptinhalt */
+
 main {
   flex-grow: 1;
   padding: 2rem;
 }
 
-/* Fussbereich */
 footer {
   background-color: var(--dunkelbeige);
   padding: 1rem;
@@ -122,7 +120,7 @@ footer {
   color: var(--text);
 }
 
-/* Bild-Slider für Katalog */
+
 .slider {
   position: relative;
   width: 100%;
