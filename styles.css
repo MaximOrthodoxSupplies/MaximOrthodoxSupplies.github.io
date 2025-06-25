@@ -159,3 +159,42 @@ a.no_hover:hover {
              
 }
 
+img {
+  max-width: 30%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  display: inline; 
+}
+
+#Justitia {
+
+  max-width: 20%;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  display: inline; 
+
+}
+
+#jesutaufe {
+
+  max-width: 10%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  display: inline; 
+
+}
+
+#creditcard {
+
+  max-width: 20%;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  display: inline; 
+
+}
+
+
